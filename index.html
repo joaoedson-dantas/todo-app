@@ -25,32 +25,58 @@
       </div>
       <div class="app-body">
         <div class="check-body">
-          <div class="check-item">
-            <label for="checkbox-1">Create new project</label>
-            <input type="checkbox" name="radio-teste" id="checkbox-1">
+          <div class="allTasks">
+            <div class="check-item">
+              <label for="checkbox-1">Create new project</label>
+              <input type="checkbox" name="radio-teste" id="checkbox-1">
+            </div>
+            <div class="check-item">
+              <label for="checkbox-2">Working call</label>
+              <input type="checkbox" name="radio-teste" id="checkbox-2">
+            </div>
+            <div class="check-item">
+              <label for="checkbox-3">Meet with doctor</label>
+              <input type="checkbox" name="radio-teste" id="checkbox-3">
+            </div>
+            <div class="check-item">
+              <label for="radio-4">Meet with doctor</label>
+              <input type="checkbox" name="radio-teste" id="radio-4">
+            </div>
           </div>
-          <div class="check-item">
-            <label for="checkbox-2">Working call</label>
-            <input type="checkbox" name="radio-teste" id="checkbox-2">
-          </div>
-          <div class="check-item">
-            <label for="checkbox-3">Meet with doctor</label>
-            <input type="checkbox" name="radio-teste" id="checkbox-3">
-          </div>
-          <div class="check-item">
-            <label for="radio-4">Meet with doctor</label>
-            <input type="checkbox" name="radio-teste" id="radio-4">
+          <div class="completedTasks">
+            <p>Completed tasks</p>
           </div>
         </div>
       </div>
       <div class="app-footer">
-        <button>
+        <button class="add-task">
           <ion-icon name="add"></ion-icon>
         </button>
       </div>
     </div>
   </div>
-
+  <div id="modalAdd" class="modal-container">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="fechar-modal">
+          <ion-icon id="fechar-modal" name="add"></ion-icon>
+        </button>
+        <h4 class="title">add a task </h4>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <input type="text" placeholder="Task name">
+          <label for="descreva">Describe your task</label>
+          <textarea name="descreva" id="descreva" cols="30" rows="10"></textarea>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="add-task">
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </div>
 
 
   <script src="./main.js"></script>
